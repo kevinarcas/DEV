@@ -1,0 +1,62 @@
+h1{
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+/* Le doy estilo a todos los elementos del formulario */
+#usuario form *{
+    /* Cada elemento está en una línea. */
+    display: block;
+}
+
+/* Selector de atributo: selecciono los input de tipo text. */
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"]{
+    background: green;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* Selector hijo. */
+#menu > li > a{
+    color: red;
+}
+
+/* PRIORIDAD */
+/* A igualdad de específico, le da más prioridad a los estilos que están más abajo en el CSS. */
+/* Si el selector es más específico, tiene prioridad aunque esté más arriba escrito en el CSS. */
+/* El !important tiene prioridad sobre todo. */
+#saludo h1{
+    background-color: brown !important;
+}
+
+h1{
+    background-color: purple !important;
+}
+
+h1{
+    background-color: black;
+}

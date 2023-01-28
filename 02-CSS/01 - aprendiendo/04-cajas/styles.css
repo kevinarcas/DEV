@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding: 40px;
+}
+
+.caja{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    border: 10px solid red;
+    margin: 15px;
+    padding: 20px;
+    padding-bottom: 40px;
+    /* Las cajas se ponen una al lado de la otra. */
+    float: left;
+}
+
+.caja p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    /* Le pongo el tamaño de la caja (150 - 15 margen) para que el texto quede centrado de altura. */
+    line-height: 135px;
+}
+
+.clearfix{
+    float: none;
+    /* Clear both (limpia los flotados a la izda y derecha) */
+    clear: both;
+    /* clear: left; */
+    /* clear: right; */
+}
+
+#cajas{
+    max-width: 750px;
+    border: 1px solid black;
+}

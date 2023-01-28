@@ -1,0 +1,99 @@
+/********************************/
+/********* TRANSICIONES *********/
+/********************************/
+
+/* transition: elemento(s) tiempo */
+/* transition: elem1 tiempo1, elem2 tiempo2, ... */
+
+#boton{
+    display: block; /* Para que funcione el width */
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 5px solid rgb(6, 83, 6);
+    
+    /* transition: all 2s; */ /* Transicion de todas las propiedades y tarda 2 segundos. */
+    /* transition: all 500ms; */ /* Medio segundo */
+    /* transition: border 2s; */ /* Lo demás cambia instantáneo, y sólo el botón cambia en transición. */
+
+    /* Cambio varias propiedades a distinto tiempo. */
+    transition: border 500ms, background-color 3s, border-radius 1s;
+
+}
+
+#boton:hover{
+    border-radius: 15px;
+    background-color: orangered;
+    border: 5px solid red;
+}
+
+
+/*******************************/
+/********* ANIMACIONES *********/
+/*******************************/
+
+/* Creo un @keyframes nombre
+
+
+from{ propiedades iniciales }
+to{ propiedades finales }
+
+
+También puedo poner en lugar de from-to:
+0%{ ... } 50% y 100%
+
+Dentro de las propiedades de un elemento, puedo poner:
+
+animation-name              nombre de la animación (nombre keyframe)
+animation-duration          duración de la animación
+animation-iteration-count   nº veces que se repite la animación
+animation-timing-function   cómo se va a ejecutar de rápido.
+*/
+
+#caja{
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    background-color: lightseagreen;
+    color: white;
+    border: 5px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    /* Pongo el nombre del @keyframes */
+    animation-name: desplazamiento;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /* Es lineal, va igual de rápida siempre */
+}
+
+@keyframes desplazamiento{
+    /* from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 800px;
+    } */
+
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg); /* Empieza rotado 0 grados */
+    }
+    50%{
+        margin-left: 800px;
+        transform: rotate(360deg); /* Rota a 360 grados al 50% */
+    }
+    75%{
+        background-color: red;
+        border-radius: 999px;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg); /* Termina rotado 0 grados. */
+    }
+}

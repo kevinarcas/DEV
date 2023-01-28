@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Cajas en CSS</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>Cajas en CSS con Víctor Robles Web</h1>
+        <!-- ELEMENTOS FLOTADOS -->
+        <section id="cajas">
+            <div class="caja">
+                <p>Caja 1</p>
+            </div>
+            <div class="caja">
+                <p>Caja 2</p>
+            </div>
+            <div class="caja">
+                <p>Caja 3</p>
+            </div>
+            <div class="caja">
+                <p>Caja 4</p>
+            </div>
+            <div class="caja">
+                <p>Caja 5</p>
+            </div>
+            <div class="caja">
+                <p>Caja 6</p>
+            </div>
+            <div class="caja">
+                <p>Caja 7</p>
+            </div>
+            <div class="caja">
+                <p>Caja 8</p>
+            </div>
+            <div class="caja">
+                <p>Caja 9</p>
+            </div>
+            
+            <!-- LIMPIAR FLOTADOS -->
+            <!-- Con este clearfix los siguientes elementos se van debajo, 
+                y además el borde de cajas rodea toda la section.
+                Probar a comentarlo para ver cómo el borde no funciona bien
+                y los siguientes elementos se ponen al lado del section. -->
+            <div class="clearfix"></div>
+        </section>
+
+        <!-- ELEMENTOS NO FLOTADOS QUE SE MANTENGAN ABAJO -->
+        <h2>Contenido después de las cajas posicionadas</h2>
+        <p>Texto de prueba</p>
+    </body>
+</html>

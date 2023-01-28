@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Sección 3</title>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <form>
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Escribe el nombre..." />
+            </p>
+            <p>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion"></textarea>
+            </p>
+
+            <input type="radio" name="genero" value="hombre">Hombre<br/>
+            <input type="radio" name="genero" value="mujer">Mujer<br/>
+            <input type="radio" name="genero" value="nada">Nada<br/>
+
+            <br/>
+            <select name="generoDos">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="nada">Nada</option>
+            </select>
+            <br/><br/>
+
+            <input type="submit" value="Enviar formulario" />
+        </form>
+    </body>
+</html>

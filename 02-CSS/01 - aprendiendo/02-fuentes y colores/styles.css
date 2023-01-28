@@ -1,0 +1,81 @@
+/***********/
+/* FUENTES */
+/***********/
+
+/* font-family es para la fuente de letra. */
+/* font-size modifica el tamaño de la letra. */
+/* font-style italic te la pone en cursiva */
+/* font weight bold en negrita, lighter letra finita */
+
+/* Linkear fuentes de Google fonts:
+Voy a google fonts y copio el <link> y lo pongo en el HTML.
+Luego aplico el CSS como me indica en la guía de Google Fonts.
+*/
+
+/* Descargar fuentes de Google fonts:
+Descargo una fuente, la meto en /fonts/ en el proyecto.
+Hago un @font-face y la uso donde quiera.
+*/
+
+@font-face {
+    font-family: MontserratFuenteCustom;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+h3{
+    font-family: "Comic Sans MS";
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#linkeada{
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+#descargada{
+    font-family: MontserratFuenteCustom, "Comic Sans MS";
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+/************************************************************/
+
+/***********/
+/* COLORES */
+/***********/
+/* Colores del sistema */
+h1{
+    color: mediumpurple;
+}
+
+/* Colores hexadecimales */
+h3{
+    color: #ccc;
+}
+
+/* Colores RGB */
+#linkeada{
+    color: rgb(255, 225, 107);
+}
+
+/* Colores RGBA:
+Es como el RGB pero el 4º parámetro es la transparencia (0-1)
+*/
+#descargada{
+    color: rgba(255, 225, 107, 0.5);
+}

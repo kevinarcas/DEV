@@ -1,0 +1,63 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/************************************************/
+/* Pseudoclases es poner ':' por ejemplo :hover */
+/************************************************/
+
+/* Modifico el primer elemento ul li */
+ul li:first-child{
+    color: purple;
+}
+
+/* Modifico el segundo elemento (empieza en 1) */
+ul li:nth-child(2){
+    color: orange;
+}
+
+/* Modifico el último elemento ul li */
+ul li:last-child{
+    color: gray;
+}
+
+#mi-enlace{
+    font-size: 30px;
+    color: lightsalmon;
+}
+
+/* Cuando aún no se ha visitado un enlace */
+#mi-enlace:link{
+    color: red;
+}
+
+/* Cuando ya se ha visitado un enlace */
+#mi-enlace:visited{
+    color: green;
+}
+
+/* Cuando paso el ratón por encima */
+#mi-enlace:hover{
+    color: blue;
+}
+
+/* Cuando estoy pulsando el elemento */
+#mi-enlace:active{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Cuando estoy en ese campo */
+input[type="text"]:focus{
+    border: 4px dashed red;
+}

@@ -1,0 +1,178 @@
+/* 
+Ejercicio completo con HTML y CSS.
+
+1. Crear un documento HTML y vincularlo con un CSS
+2. Crear una estructura HTML que cuente con un CONTENEDOR GENERAL,
+    CABECERA, MENÚ, BARRA LATERAL, SECCIÓN DE CONTENIDO PRINCIPAL,
+    ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL, Y FOOTER.
+3. Todo el contenido debe estar dentro del contenedor general
+    y su ancho será de 1200px y estar centrado.
+4. Header debe ocupar el 100% del ancho y tener un texto grande centrado.
+5. Menú debe tener los elementos uno al lado del otro.
+6. El contenido principal debe tener un acho del 70%.
+7. El contenido dentro del contenedor principal debe ser una
+    cuadrícula con 4 líneas de 2 cajas.
+8. La barra lateral debe tener un ancho del 30%.
+9. El footer debe tener un ancho del 100% del div que lo contiene
+    y estar abajo del todo.
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general{
+    width: 1200px;
+    border: 1px solid #ccc;
+    margin: 0px auto; /* Con esto se centra verticalmente */
+    margin-top: 20px;
+}
+
+#header{
+    background-color: rgb(15, 118, 236);
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#menu{
+    background-color: #eee;
+}
+
+#menu ul li{
+    /* display: inline-block; */
+    display: block;
+    float: left;
+    border-right: 1px solid #aaa;
+}
+
+#menu ul li a{
+    display: block; /* Para que <a> ocupe todo el li */
+    padding: 15px;
+    color: #444;
+}
+
+/* Pseudoclase */
+#menu ul li:hover{
+    background-color: rgb(16, 75, 143);
+    cursor: pointer;
+
+}
+
+#menu ul li:hover a{
+    color: white;
+}
+
+#contenido{
+    float: left;
+    width: 69%;
+}
+
+#lateral{
+    float: left;
+    width: 30%;
+    border: 1px solid red;
+    min-height: 500px;
+    max-height: 650px;
+    text-align: center;
+    /* No cabe de alto y sale la barra para hacer scroll. */
+    overflow-y: scroll;
+}
+
+#contenido > h1{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+    /* Sombra (parámetros: ejeX, ejeY, difuminado, color sombra) */
+    text-shadow: 5px 5px 4px gray;
+}
+
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: #ccc;
+    border: 1px solid gray;
+    color: white;
+    float: left;
+    margin: 20px;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 200px;
+    color: #444;
+    text-transform: uppercase;
+    /* Sombra (parámetros: ejeX, ejeY, difuminado, color sombra) */
+    box-shadow: 5px 5px 10px gray;
+    /* Borde redondeado */
+    border-radius: 15px;
+    /* border-radius: 50px 10px 4px 61px; */
+}
+
+.sombra-interior{
+    /* Sombra (ejeX, ejeY, difuminado, color, inset(dentro)) */
+    box-shadow: 0px 0px 30px gray inset !important;
+}
+
+#footer{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background-color: #eee;
+    text-align: center;
+    color: #444;
+    border-top: 1px solid #ccc;
+}
+
+/*******************/
+/* POSICIONAMIENTO */
+/*******************/
+/*  Relativo: es el por defecto 
+    Absoluto: no hace caso a floats etc.
+    Fijo: se queda fijo aunque hagamos scroll.
+*/
+.libre{
+    position: absolute;
+    border: 1px solid black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+}
+
+.libre1{
+    background-color: red;
+    top: 300px;
+    left: 250px;
+    /* Cuanto mayor sea el z-index más delante se coloca el elemento. */
+    z-index: 2;
+}
+
+.libre2{
+    background-color: green;
+    top: 280px;
+    left: 250px;
+    z-index: 1;
+}
+
+.fija{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+    top: 50%;
+    left: 0px;
+    background-color: blue;
+    border: 1px solid black;
+    color: white;
+}
