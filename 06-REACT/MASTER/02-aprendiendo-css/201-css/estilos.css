@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 1100px;
+    margin: 0px auto; /* Centra el contenido en el body */
+    border: 1px solid black;
+}
+
+header{
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    text-align: center; /* Centro el texto */
+    line-height: 100px /* Centro el texto verticalmente. Indico 100px porque es la altura que tiene, así lo centra. */;
+    color: white;
+    border-bottom: 3px dashed black;
+}
+
+nav{
+    background-color: lightblue;
+    height: 50px; /* Si no le doy altura, es 0px y no se ve el background-color. */
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{
+    clear: both; /* Para que el siguiente elemento a un float se coloque debajo. */
+}
+
+#content{
+    float: left;
+    width: calc(80% - 80px); /* Le quito 40 y 40 de cada lado. */
+    min-height: 500px;
+    background-color: green;
+    padding: 40px;
+}
+
+.article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+.article:first-child{
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+aside{
+    float: left;
+    width: calc(20% - 20px); /* Le quito 10 y 10 del padding de cada lado. */
+    min-height: 500px;
+    background-color: orange;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}

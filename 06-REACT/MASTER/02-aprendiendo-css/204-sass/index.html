@@ -1,0 +1,40 @@
+<!-- Para utilizar SASS, instalo nodejs y luego SASS desde npm.
+Para verificar que tengo node instalado: node --version
+Para verificar que tengo npm instalado:  npm --version
+Para verificar que tengo sass instalado: sass --version
+Instalar SASS:  npm install -g sass
+-->
+
+<!-- 
+    Para que funcione el SASS, tengo que compilar el código.
+    Voy desde el bash a la carpeta, y pongo:
+    sass --watch estilos.scss estilos.css
+ -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+</head>
+<body>
+    <h1>Aprendiendo SASS</h1>
+
+    <div class="caja">
+        <h2>Encabezado</h2>
+        <p>Hola</p>
+    </div>
+
+    <div class="caja" id="caja2">
+        <h2>Encabezado</h2>
+        <p>Hola 2</p>
+    </div>
+
+    <div class="caja" id="caja3">
+        <h2>Encabezado</h2>
+        <p>Hola 3</p>
+    </div>
+</body>
+</html>

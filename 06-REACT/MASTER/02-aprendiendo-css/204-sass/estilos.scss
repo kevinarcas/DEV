@@ -1,0 +1,53 @@
+/* Importo otro fichero scss. Le pongo _ delante del nombre, y al importarlo no. */
+@use 'anidacion'; 
+
+/* VARIABLES */
+$color-principal: #ccc;
+$color-letra: green;
+
+body{
+    background-color: $color-principal;
+}
+
+h1{
+    color: $color-letra;
+}
+
+/********************
+/****** MIXINS ******
+*********************
+
+Son como funciones...
+Le puedo pasar parámetros, etc.
+*/
+
+/* Defino la "función" */
+@mixin caja_personalizada($fondo: white){
+    background-color: $fondo;
+    border: 4px solid black;
+    box-shadow: 0px 0px 2px black;
+    color: $color-letra;
+    margin-top: 20px;
+}
+
+#caja2{
+    @include caja_personalizada(); /* Incluyo el mixin, y coje sus valores. */
+    font-size: 30px;
+}
+
+#caja3{
+    @include caja_personalizada($fondo: yellow)
+}
+
+
+
+/************************
+/****** OPERADORES ******
+*************************
+
+Permiten hacer operaciones matemáticas.
+*/
+
+.caja{
+    width: 400px + 50px; /* Si inspecciono pone 450px */
+}

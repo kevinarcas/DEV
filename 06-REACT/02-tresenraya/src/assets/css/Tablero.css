@@ -1,0 +1,8 @@
+#tablero{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 30px;
+    justify-content: center; /* predeterminado es horizontal, alineo horizontalmente al medio. */
+    align-content: center; /* alineo en el eje no principal (vertical en este caso). */
+}

@@ -1,0 +1,22 @@
+#recetario{
+    list-style: none;
+    position: relative;
+}
+
+.plato{
+    background-color: rgba(80, 163, 61, 0.589);
+    width: 180px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-top: 5px;
+}
+
+.plato:nth-child(even){
+    background-color: rgba(192, 141, 134, 0.534);
+}
+
+.plato li{
+    text-align: left;
+    margin-left: 15px;
+}

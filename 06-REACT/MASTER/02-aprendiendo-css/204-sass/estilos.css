@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* Anidación */
+.caja h2 {
+  color: blue;
+}
+.caja p {
+  color: red;
+}
+
+/* Importo otro fichero scss. Le pongo _ delante del nombre, y al importarlo no. */
+/* VARIABLES */
+body {
+  background-color: #ccc;
+}
+
+h1 {
+  color: green;
+}
+
+/********************
+/****** MIXINS ******
+*********************
+
+Son como funciones...
+Le puedo pasar parámetros, etc.
+*/
+/* Defino la "función" */
+#caja2 {
+  background-color: white;
+  border: 4px solid black;
+  box-shadow: 0px 0px 2px black;
+  color: green;
+  margin-top: 20px;
+  /* Incluyo el mixin, y coje sus valores. */
+  font-size: 30px;
+}
+
+#caja3 {
+  background-color: yellow;
+  border: 4px solid black;
+  box-shadow: 0px 0px 2px black;
+  color: green;
+  margin-top: 20px;
+}
+
+/************************
+/****** OPERADORES ******
+*************************
+
+Permiten hacer operaciones matemáticas.
+*/
+.caja {
+  width: 450px; /* Si inspecciono pone 450px */
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pizza",
+        "ingredientes":["Tomate","Queso mozarella", "Champiñones"]
+    },
+    {
+        "id": 2,
+        "nombre": "Arroz a la cubana",
+        "ingredientes":["Arroz", "Huevo", "Tomate"]
+    },
+    {
+        "id": 3,
+        "nombre": "Ensalada",
+        "ingredientes":["Lechuga", "Tomate", "Cebolla", "Sal", "Aceite", "Vinagre"]
+    }
+]
