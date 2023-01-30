@@ -1,4 +1,0 @@
-hola esto es una prueba
-
-Añadiendo la línea 1 del fichero prueba
-Añadiendo la linea 2, rama prueba.
